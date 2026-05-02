@@ -6,6 +6,9 @@ from operations import Addition, Subtraction, Multiplication, Division
 class CalculatorUI:
     def __init__(self, root):
         self.root = root
+        self.entry1 = None
+        self.entry2 = None
+        self.result_label = None
         # map operation for classes
         self.operation_map = {
             "Addition": Addition(),
